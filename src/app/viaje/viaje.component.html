@@ -1,0 +1,84 @@
+
+
+<!-- <div class="container__cards__column">
+  <div class="card__informacion">
+    <div class="card__informacion__miniatura">
+      <div class=" card__informacion__contFecha">
+        <div class="card__informacion__dias"> {{viaje.diaLimite}} </div>
+        <div class=" card__informacion__mes"> {{viaje.mesLimite}} </div>
+      </div>
+      <img class="card__informacion__img" [src]="viaje.imagen" />
+    </div>
+    <div class="card__footer">
+      <div class="card__footer__categoria">Reservar</div>
+      <h1 class="card__footer__titulo"> {{viaje.nombre }}</h1>
+      <h2 class="card__footer__subtitulo"> {{viaje.fraseDestino}} </h2>
+      <p class="card__footer__descripcion"> {{viaje.descripcion}} </p>
+      <div class="card__footer__span">
+        <span class="timestamp"> {{viaje.oferta}} </span>
+        <span class="comments">
+          <a href="#"> {{viaje.precio }}</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div *ngFor= "let viaje of viajes">
+<div class="container__cards__column">
+  <div class="card__informacion">
+    <div class="card__informacion__miniatura">
+      <div class=" card__informacion__contFecha">
+        <div class="card__informacion__dias"> {{viaje.diaLimite}} </div>
+        <div class=" card__informacion__mes"> {{viaje.mesLimite}} </div>
+      </div>
+      <img class="card__informacion__img" [src]="viaje.imagen" />
+    </div>
+    <div class="card__footer">
+      <div class="card__footer__categoria">Reservar</div>
+      <h1 class="card__footer__titulo"> {{viaje.nombre }}</h1>
+      <h2 class="card__footer__subtitulo"> {{viaje.fraseDestino}} </h2>
+      <p class="card__footer__descripcion"> {{viaje.descripcion}} </p>
+      <div class="card__footer__span">
+        <span class="timestamp"> {{viaje.oferta}} </span>
+        <span class="comments">
+          <a href="#"> {{viaje.precio }}</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+</div> -->
+
+<div *ngFor= "let viaje of viajes">
+  <div class="container__cards__column">
+    <div class="card__informacion">
+      <div class="card__informacion__miniatura">
+        <div class=" card__informacion__contFecha">
+          <div class="card__informacion__dias"> {{viaje.diaLimite}} </div>
+          <div class=" card__informacion__mes"> {{viaje.mesLimite}} </div>
+        </div>
+        <img class="card__informacion__img" [src]="viaje.imagen" />
+      </div>
+      <div class="card__footer">
+        <div class="card__footer__categoria" (click)="onSelect(viaje)" 
+        [class.selected]="viaje === viajeSeleccionado">Reservar</div>
+        <h1 class="card__footer__titulo"> {{viaje.nombre }}</h1>
+        <h2 class="card__footer__subtitulo"> {{viaje.fraseDestino}} </h2>
+        <p class="card__footer__descripcion"> {{viaje.descripcion}} </p>
+        <div class="card__footer__span">
+          <span class="timestamp"> {{viaje.oferta}} </span>
+          <span class="comments">
+            <a href="#"> {{viaje.precio }}</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+ 
+
+
+<app-detalle-viajes [viaje]="viajeSeleccionado"></app-detalle-viajes>

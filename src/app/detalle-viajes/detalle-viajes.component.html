@@ -1,0 +1,13 @@
+<div  class="detalle"   *ngIf="viaje" >
+  <div class="container">
+  <h4>{{ viaje.nombre}} Details</h4>
+  <div>
+    <span>$</span>{{viaje.precio}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="viaje.nombre" placeholder="ciudad">
+
+    </label>
+  </div>
+</div>
+</div>
