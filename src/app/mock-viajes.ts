@@ -2,6 +2,7 @@ import { Viaje } from './viaje';
 
 export const VIAJES: Viaje[] = [
     {
+        id: 1,
         nombre: 'Buenos Aires',
         diaLimite: 18,
         mesLimite: 'abril',
@@ -12,6 +13,7 @@ export const VIAJES: Viaje[] = [
         oferta: 'Oferta'
     },
     {
+        id: 2,
         nombre: 'Ciudad de Mexico',
         diaLimite: 14,
         mesLimite: 'Mayo',
@@ -22,6 +24,7 @@ export const VIAJES: Viaje[] = [
         oferta: '----'
     },
     {
+        id: 3,
         nombre: 'Playa de Las Catedrales',
         diaLimite: 20,
         mesLimite: 'abril',
@@ -32,6 +35,7 @@ export const VIAJES: Viaje[] = [
         oferta: 'Oferta'
     },
     {
+        id: 4,
         nombre: 'Buenos Aires',
         diaLimite: 18,
         mesLimite: 'abril',
@@ -42,6 +46,7 @@ export const VIAJES: Viaje[] = [
         oferta: 'Oferta'
     },
     {
+        id: 5,
         nombre: 'Ciudad de Mexico',
         diaLimite: 14,
         mesLimite: 'Mayo',
@@ -52,6 +57,7 @@ export const VIAJES: Viaje[] = [
         oferta: '----'
     },
     {
+        id: 6,
         nombre: 'Playa de Las Catedrales',
         diaLimite: 20,
         mesLimite: 'abril',

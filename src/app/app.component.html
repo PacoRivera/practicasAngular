@@ -8,15 +8,17 @@
    
       <nav class="header__nav">
         <ul class="header__nav__ul">
-          <li class="header__nav__ul__li"><a href="#"><span class="icon-home3"></span>Inicio</a></li>
+          <li class="header__nav__ul__li"><a routerLink="/"><span class="icon-home3"></span>Inicio</a></li>
           <li class="header__nav__ul__li"><a href="#"><span class="icon-happy"></span>Conocenos</a></li>
-          <li class="header__nav__ul__li"><a href="#"><span class="icon-location2"></span>Destinos</a></li>
+          <li class="header__nav__ul__li"><a class="nav-link" routerLink="/viajes"><span class="icon-location2"></span>Destinos</a></li>
           <li class="header__nav__ul__li"><a href="#"><span class="icon-mail"></span>Contactanos</a></li>
           <li class=" header__nav__ul__li header__nav__ul__li__perfil"><a href="#"><span class="icon-user"></span>Mi perfil</a></li>
           <li class=" header__nav__ul__li header__nav__ul__li__perfil" id="registrarme"><a href="#">Registrarme</a></li>
         </ul>
       </nav>
     </header>
-    <app-viaje class="cards"></app-viaje>
+
+
+    <router-outlet></router-outlet>
 </div>
 

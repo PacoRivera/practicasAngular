@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Viaje } from '../viaje';
 
-import {VIAJES} from '../mock-viajes';
+import { VIAJES } from '../mock-viajes';
 
 import { HeroService } from '../hero.service';
 
@@ -19,16 +19,24 @@ export class ViajeComponent implements OnInit {
 
   // viajeSeleccionado: Viaje;
 
-     onSelect(viaje: Viaje): void {
-       this.viajeSeleccionado = viaje;
-     }
+  // onSelect(viaje: Viaje): void {
+  //   this.viajeSeleccionado = viaje;
+  // }
 
   constructor(private viajeService: HeroService) { }
 
   ngOnInit() {
     this.getViajes();
   }
-getViajes(): void {
-  this.viajes = this.viajeService.getViajes();
-}
+
+  //   forma sincrona
+  // getViajes(): void {
+  //   this.viajes = this.viajeService.getViajes();
+  // }
+
+  getViajes(): void {
+    this.viajeService.getViajes()
+      .subscribe(viajes => this.viajes = viajes);
+  }
+
 }

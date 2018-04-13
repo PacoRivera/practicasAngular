@@ -1,4 +1,5 @@
 export class Viaje {
+    id: number;
     nombre: string;
     diaLimite: number;
     mesLimite: string;

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ViajeComponent } from './viaje/viaje.component';
 import { DetalleViajesComponent } from './detalle-viajes/detalle-viajes.component';
 import { HeroService } from './hero.service';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { HeroService } from './hero.service';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [HeroService],
   bootstrap: [AppComponent]
